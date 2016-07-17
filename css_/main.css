@@ -1,0 +1,214 @@
+/* NAVIGATION*/
+body {   
+	font-family: 'Crimson Text', serif; /*default entire doc to this font*/
+ }
+
+header, /* easily apply same settings to each section, without affecting nav and footer */
+section {	
+	margin: 0 auto;
+	width: 80%;
+	display: block;
+}
+nav {
+	min-width: 100%;
+	height:48px;
+	font-family: sans-serif;
+}
+ul{
+	
+	float: right;
+	margin: 12px 18px;
+	padding: 10px 30px;
+}
+ul li a {
+	text-decoration: none;
+	color: #369;
+	font-size: 12px;
+}
+li {
+	margin: 0 5px;
+	padding: 5px;
+	font-size: 12px;
+	display: inline-block;
+	color: #369;
+}
+
+/*HEADER*/
+header {
+	text-align: center;
+	
+	width: 825px;
+	clear: both;
+	margin: 30px auto; /*not sure where these values are from */
+
+	height: 163px;
+	padding: 6px 0;
+	
+}
+header h1 {	
+	font-size: 55px;
+	line-height: 1em; /* what's an "em" unit measure? relative to size of font*/
+	margin: 10px 0;
+	color: #232323;
+}
+header h4 {
+	font-weight: 500; 
+	font-size: 20px;	
+	line-height: 1.5em; /*1.5x the font size*/
+	margin: 10px 0;
+	color: #222;
+}
+
+/*SECTION ONE*/
+.one {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	height: 288px;
+	padding-bottom: 30px;
+	font-family: 'Roboto', sans-serif;
+}
+.one a {
+	display: inline-block; /*why use position: relative;*/
+	top: 40px;
+	left: 75px;
+	width: 160px;
+	margin: 15px 20px 5px;
+	float: ; /*unsure of float in this instance*/
+	border: 1px solid #E8E8E8;
+	border-radius: 5px; 
+	box-shadow: 0 0 5px #EFEFEF; /*knew there was a shadow to use*/
+	padding: 20px 10px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+.one h3{
+	color: #C00;
+
+	margin: 10px 0;
+	font-size: 14px;
+}
+.one h3 sup {
+	color: #999;
+	font-size: 9px;
+	font-weight: normal;
+}
+.one h2 {
+	font-size: 21px;
+	color: #369;
+	font-weight: bold;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+.one a p {
+	color: #222;
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 5px 0;
+}
+
+/*HORIZONTAL RULE*/
+hr {
+	width: 35%;
+	height: 12px;
+	clear: both; /*no floating elements*/
+	border: 0; /* removes frame/border, not sure where it came from */
+	margin: 0 auto;
+	background: white url('../img/img-hr.png') no-repeat 50% 50%; /*what's the 50 50? */ 
+}
+
+/*SECTION TWO*/
+.two {
+	
+	margin-bottom: 50px;
+	margin: 0 auto;
+	
+	text-align: center;
+}
+.two h1 {
+	color: #232323;
+	
+	
+	font-size: 48px;
+	line-height: 1.1em;
+	letter-spacing: -1px;
+	text-align: center;
+}
+.two p {
+	font-size: 22px;
+	line-height: 1.3em;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.meet {
+	position: relative;
+    left: -20px;
+    top: 20px;
+}
+.meet a {
+	display: block;
+	width: 143px;
+	height: 104px;
+	background: url('../img/img-customers.png') no-repeat 0 0;
+	text-indent: -1000em;
+}
+.meet a:hover {
+	background-position: 0 100%;
+}
+.meet p {
+	font-size: 14px;
+	text-align: center;
+	color: #369;
+}
+.meet p:hover {
+	color: #69C;
+	text-decoration: underline;
+}
+.arrow-left {
+	width: 69px;
+	height: 36px;
+	position: relative;
+	top: -35px;
+}
+.globe {
+	float: right;
+}
+.banner {
+	position: relative;
+
+}
+
+/*SECTION THREE*/ 
+.three {
+	text-align: center;
+	
+	margin: 0 auto;
+}
+.three h1 {
+	
+}
+
+.three ol {
+	font-family: 'Roboto', sans-serif;
+	list-style-type: decimal; /* cannot get the numbers to show*/
+}
+.three div {
+	width: 32%;
+	display: inline-block;
+	text-align: left;
+	padding: 3px;
+}
+.three li {
+	
+}
+.three ol li h3 {
+	color: red;
+	font-size: 18px;
+	line-height: 12px;
+}
+.three ol li p {
+	font-size: 12px;
+	line-height: 16px;
+}

@@ -1,0 +1,367 @@
+/*SITEWIDE RESETS*/ /*why resets?*/
+* {
+	margin:0;
+	padding:0;	
+}
+body { /* set type for eniter site */ 
+	font-family: 'Crimson Text', sans-serif;
+	background-color: #fbfbfb;
+}
+
+a {
+	text-decoration: none;
+	color: #369;
+}
+/* HEADER & SECTION STYLES */
+header,
+section {	
+	margin: 30px auto; /* the section or site container is centered */
+	width: 825px;
+	display: block; /* block so each container stacks */ 
+	background-color: #ddd;
+}
+hr { /* horizontal rule */
+	background: white url('../img/img-hr.png') no-repeat scroll 50% 50%; 
+	/* doesn't need a color would be clear, can be custom w/ img
+	not sure why no-repeat scroll, 50% determines horizontal positioning */
+	clear: both; /*makes so that nothing rest next to it */
+	border: 0; /* a box by default, visible when adding height or width*/
+	height: 12px; /* does it depend on the img */
+}
+sup { /* text styling */
+	color: #999;
+	font-weight: normal;
+	font-size: 11px;
+}
+/* NAVIGATION */
+nav {	
+	min-width: 100%;
+	height: 48px;
+	font-family: sans-serif;
+}
+nav ul {
+	float: right;
+	margin: 12px 18px;
+	padding: 10px 30px;
+}
+nav li {
+	margin: 0 5px;
+	padding: 5px;
+	font-size: 12px;
+	display: inline-block;
+	background-color: #bbb;
+	color: #369;
+}
+nav a:hover {
+	color: #18AFE0;
+}
+.signin { /* different from the other items on nav bar,
+	is this just for hierarchy or status? */
+	color: #18AFE0;
+}
+.signin:hover {
+	color: #369;
+}
+/*  HEADER */
+header {
+	clear: both; /*does not allow items to float on both sides, can be on left or right side */
+	height: 163px; /* to define how tall the section is */
+	padding: 6px 0;
+	text-align: center; /* centers everything in section*/
+}
+header h1 { /* text styling */
+	font-size: 58px;
+	line-height: 1em;
+	margin: 10px 0;
+	color: #232323;
+}
+header h5 { /*subhead styling*/
+	font-weight: 500;
+	font-size: 20px;	
+	line-height: 1.5em;
+	margin: 10px 0;
+	color: #222;
+}
+/*
+* PRODUCTS 
+*/
+/*is this the ideal way to section off css w/ comments*/
+.products {
+	text-align: center; /* same, centers items in section */
+	height: 288px;
+	padding-bottom: 30px;
+}
+.products a {
+	position: relative; 
+	top: 40px;
+	left: 75px;
+	width: 160px;
+	margin: 15px 20px 5px;
+	float: left;
+	border: 1px solid #E8E8E8; /* give a frame to each product*/
+	border-radius: 5px;
+	box-shadow: 0 0 5px #EFEFEF; /* gives the box a faint shadow or glow*/
+	padding: 20px 10px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+.products h3 {
+	font-size: 21px;
+	color: #369; /* blue */
+	font-weight: bold;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+.products h3 span {
+	text-decoration: underline;
+}
+.products h4 {
+	margin: 10px 0;
+	font-size: 14px;
+	color: #C00; /* red */
+}
+.products p {
+	color: #222; /* dark gray */
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 5px 0;
+}
+/*
+* CUSTOMERS
+*/
+.customers {
+	margin-bottom: 50px;
+	position: relative; /* why is this relative? */
+}
+.customers h2 {
+	color: #232323;
+	font-size: 48px;
+	line-height: 1.1em; /* leading */
+	letter-spacing: -1px;
+	text-align: center; /* things aligned here  */
+}
+.customers p {
+	font-size: 22px;
+	line-height: 1.3em;
+	color: #666;
+	margin-bottom: 20px;	
+}
+/*
+* MEET
+*/
+.meet {
+	position: absolute; /* would start on top left corner of section */
+    left: -140px; /* the negative pulls it left */
+    top: 70px; /* lowers the image */
+}
+.meet a { /* the image is entered as an anchor */
+	display: block; /* its a block but does the absolute position allow to hover */
+	width: 143px;
+	height: 104px; /* dimmension of image */
+	background: url('../img/img-customers.png') no-repeat 0 0;
+	text-indent: -1000em;
+}
+.meet a:hover { /* allows for sprite effect */
+	background-position: 0 100%;
+}
+.meet p { /* image caption, grouped with the meet div */
+	font-size: 14px;
+	text-align: center;
+	color: #369;
+}
+.meet p:hover {
+	color: #69C;
+	text-decoration: underline;
+}
+.arrow-left {
+	width: 69px; 
+	height: 36px;
+	position: relative; /* why the relative position? */
+	top: -35px; 
+}
+.globe {
+	float: right;
+}
+/*
+* MANIFESTO
+*/ /* the items were not entered as an ol */
+.manifesto {
+	margin-bottom: 50px;
+	padding-left: 15px;
+	overflow: hidden;
+	text-align: center; /* items are centered */
+}
+.manifesto h2 {
+	color: #232323;
+	font-size: 48px;
+	line-height: 1.1em;
+	letter-spacing: -1px;
+	margin: 30px 0;
+}
+.column,
+.column-end { /* 2 divs, but set to both float left, why? */
+	float: left; 
+	color: #222;
+	font-size: 18px;
+	line-height: 1.5em;
+	background-color: #555;
+}
+.column { /* total width 420px */
+	width: 380px; 
+	margin-right: 40px; /* divider width is 40px */
+}
+.column-end { /* total container width is 825px, so -420 = 405px */
+	margin-right: 0px;
+	width: 380px; /* results slightly of center by 25px */
+}
+.manifesto h3 {
+	float: left; /* does this just put the object on the left side, without trouble */
+	font-size: 58px;
+	line-height: normal;
+	margin: -10px 15px 0 0;
+	color: #CCC;
+}
+.manifesto h4 {
+	font-family: 'Roboto', sans-serif;
+	margin: 5px 0;
+	color: #C00;
+	text-align: left;
+}
+.manifesto p {
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	line-height: 1.4em;
+	font-size: 12px;
+}
+/* 
+* REWORK
+*/
+.rework {
+	height: 500px;
+	position: relative;
+}
+.rework h2{
+	margin: 30px 0;
+	font-size: 48px;
+	line-height: 1.1em;
+	letter-spacing: -1px;
+	text-align: center;
+}
+.book {
+	float:left;
+}
+.quotes {
+	padding-top: 5px;
+	text-align: center;
+}
+.quotes h3 {
+	color: #888;
+	font-weight: normal;
+	font-family: "CrimsonRomanItalic", serif;
+	font-style: italic;
+	font-size: 22px;
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+.quotes p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+}
+.arrow-right {
+	width: 69px;
+	position: absolute; 
+	top: 140px;
+	right: 5px; /* defining one side places the object to the side of section margin  */
+}
+.crumple {
+	position: absolute;
+	top: 50px;
+	right: -125px; 
+}
+.crumple p {
+	font-size: 12px;
+	text-align: center; 
+}
+.crumple p:hover { /* hover adds underline and color */
+	color: #69C;
+	text-decoration: underline;
+}
+/*
+* OFFERSINGS
+*/
+.offerings h2 {
+	margin: 30px 0;
+	font-size: 48px;
+	text-align: center;
+}
+.offerings .column h3, 
+.offerings .column-end h3 {
+	margin: 5px 0;
+	font-size: 14px;
+	color: #C00;
+
+	border-bottom: 1px solid #E8E8E8; 
+	/* displays the bottom of containing box on h3, like a rule */ 
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+.offerings .column {
+	float: left; /* each div is set to float left, used instead of inline-block */
+	width: 300px;
+	margin-right: 30px; /* add dividing space */ 
+	margin-left: 110px; /* moves div over to right */
+	text-align: center;
+}
+.offerings .column-end {
+	float: left;
+	width: 300px;
+	padding: 0;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.offerings .column li,
+.offerings .column-end li {
+	list-style-type: none; /* removes the bullets from list */
+	padding: 5px;
+}
+.offerings .column a,
+.offerings .column-end a {
+	font-size: 22px;
+	font-weight: bold;
+	color: #222;
+}
+.offerings .column small,
+.offerings .column-end small {
+	color: #666;
+	font-size: 12px;
+	font-family: 'Lucida Grande', sans-serif; /* introduced another font, common to OS's */
+}
+/* 
+*Footer 
+*/
+footer {
+	margin: 30px auto;
+	text-align: center;
+	line-height: 1.5em;
+	font-family: 'Lucida Grande', sans-serif;
+}
+footer h3 {
+	font-size: 14px;
+	color: #C00;
+}
+footer a {
+	text-decoration: none; 
+}
+footer li {
+	font-size: 12px;
+	padding: 5px 0;
+}
+footer a:hover {
+	color: #69C; /* hover visual on links... site map */ 
+}
+footer p {
+	font-size: 10px;
+	color: #999;	margin-top: 50px;
+}
